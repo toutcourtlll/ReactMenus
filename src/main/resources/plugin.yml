@@ -1,0 +1,4 @@
+name: ReactMenus
+version: '${project.version}'
+main: dev.toutcourt.reactmenus.ReactMenus
+api-version: '1.20'

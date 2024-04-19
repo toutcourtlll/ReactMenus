@@ -84,20 +84,18 @@ To install ReactMenus, follow these steps:
 ### Maven
 Add the following repository and dependency to your `pom.xml`:
 ```xml
-<repositories>
-    <repository>
-        <id>spigot-repo</id>
-        <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-    </repository>
-</repositories>
-
+<repository>
+  <id>github</id>
+  <url>https://maven.pkg.github.com/toutcourtlll/ReactMenus</url>
+</repository>
+```
+```xml
 <dependencies>
-    <dependency>
-        <groupId>org.spigotmc</groupId>
-        <artifactId>spigot-api</artifactId>
-        <version>1.20.2-R0.1-SNAPSHOT</version>
-        <scope>provided</scope>
-    </dependency>
+  <dependency>
+    <groupId>dev.toutcourt</groupId>
+    <artifactId>reactmenus</artifactId>
+    <version>1.0</version>
+  </dependency>
 </dependencies>
 ```
 
@@ -106,12 +104,12 @@ Add the following repository and dependency to your `build.gradle`:
 ```groovy
 repositories {
     maven {
-        url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+        url 'https://maven.pkg.github.com/toutcourtlll/ReactMenus'
     }
 }
 
 dependencies {
-    compileOnly 'org.spigotmc:spigot-api:1.20.2-R0.1-SNAPSHOT'
+    compileOnly 'dev.toutcourt:reactmenus:1.0'
 }
 ```
 

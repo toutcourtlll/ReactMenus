@@ -2,6 +2,7 @@ package dev.toutcourt.reactmenus;
 
 import dev.toutcourt.reactmenus.core.listeners.InventoryEventsListener;
 import dev.toutcourt.reactmenus.core.managers.CustomMenuManager;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ReactMenus extends JavaPlugin {
@@ -13,6 +14,9 @@ public final class ReactMenus extends JavaPlugin {
         this.customMenuManager = new CustomMenuManager(instance);
         instance = this;
         this.getServer().getPluginManager().registerEvents(new InventoryEventsListener(), this);
+
+        Metrics metrics = new Metrics(this, 21653);
+
     }
 
     @Override
